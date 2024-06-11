@@ -22,3 +22,24 @@ function sayHello2() {
 
 let fn2 = sayHello2();
 let message = fn2();
+
+// higher order function: is fn that take fn as argument
+// or return a fn
+function greet2(fn) {
+  console.log(fn());
+}
+
+function sayHello3() {
+  return function () {
+    console.log("Hello again");
+  };
+}
+
+// map is example of HOF cuz it take fn as argument
+let numbers = [1, 2, 3];
+numbers.map((number) => number * 2);
+
+// sitTimeOut is example of HOF cuz it take fn as argument
+setTimeout(() => {
+  console.log("hey");
+}, 1000);
