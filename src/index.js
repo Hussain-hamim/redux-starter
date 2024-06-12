@@ -40,3 +40,18 @@ function myFn2(number) {
 // 2. easily testable
 // 3. concurrency
 // 4. cacheable
+
+// string are immutable
+let name = "Hussain";
+let newName = name.toUpperCase(); // new string
+
+// object and array not immutable
+let book = {};
+book.title = "red moon";
+
+// immutability benefits:
+/**1. predictability
+ * 2. faster change detection
+ * 3. concurrency
+ *
+ */
