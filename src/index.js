@@ -8,7 +8,7 @@ let output = "<div>" + input.trim() + "</div>";
 
 // functional way
 const trim = (str) => str.trim();
-const wrap = (type) => (str) => `<${type}>${str}</${type}>`;
+const wrap = (type) => (str) => `<${type}>${str}</${type}>`; // use currying
 const toLowerCase = (str) => str.toLowerCase();
 
 // function composition
@@ -18,6 +18,25 @@ const result2 = wrapInDiv(toLowerCase(trim(input)));
 // using lodash
 const transform = compose(wrap, toLowerCase, trim); // HO fn, right to left
 const transform2 = pipe(trim, toLowerCase, wrap("div")); // HO fn, left to right
+const transform3 = pipe(trim, toLowerCase, wrap("span")); // HO fn, left to right
 transform(input); // hof
 transform2(input); // hof
 console.log(transform2(input));
+
+////// pure function:
+
+// not pure fn
+function myFn(number) {
+  return number * Math.random();
+}
+
+// pure fn
+function myFn2(number) {
+  return number * 2;
+}
+
+// Benefits of pure fn:
+// 1. self documenting
+// 2. easily testable
+// 3. concurrency
+// 4. cacheable
