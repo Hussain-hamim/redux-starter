@@ -55,3 +55,11 @@ book.title = "red moon";
  * 3. concurrency
  *
  */
+
+//// updating object:
+// 1. object.assign({}, obj, {});
+const updated = Object.assign({}, person, { age: 22, name: "Hamim" });
+
+// 2. spread operator
+const person2 = { name: "Hussain" };
+const updated2 = { ...person2, name: "hamim", age: 22 };
