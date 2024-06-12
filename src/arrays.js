@@ -11,7 +11,7 @@ const added3 = [
   4, // add 4 there
   ...numbers.slice(index), // add remain array element
 ];
-console.log(add); // [1, 2, 3]
+console.log(numbers); // [1, 2, 3]
 console.log(added); // [1, 2, 3, 4]
 console.log(added2); // [4, 1, 2, 3]
 console.log(added3); // [1, 4, 2, 3]
