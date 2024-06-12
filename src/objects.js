@@ -6,7 +6,7 @@ const updated = Object.assign({}, person, { age: 22, name: "Hamim" });
 // 2. spread operator
 const person2 = { name: "Hussain" };
 const updated2 = { ...person2, name: "hamim", age: 22 };
-
+//////////////////
 const person3 = {
   name: "Hussain",
   address: {
@@ -21,3 +21,5 @@ const updated3 = {
   age: 22,
 };
 // updated3.address.city = "Kabul";
+console.log(updated);
+console.log(person);
