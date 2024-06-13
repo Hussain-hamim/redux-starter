@@ -1,5 +1,4 @@
 import store from "./customStore";
+import * as actions from "./actions";
 
-store.getState = 1;
-
-console.log(store.getState);
+store.dispatch(actions.bugAdded("bug 1"));
