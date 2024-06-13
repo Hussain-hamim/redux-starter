@@ -6,6 +6,7 @@
     "immer",
     "Khazana",
     "Khost",
+    "reduxjs",
     "updatedd"
   ]
 }
