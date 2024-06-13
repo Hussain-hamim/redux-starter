@@ -1,6 +1,8 @@
 import store from "./store";
 import { bugAdded, bugRemoved, bugResolved } from "./actions";
 
+console.log(store);
+
 const unsubscribe = store.subscribe(() => {
   console.log("store changed", store.getState());
 });
