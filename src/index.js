@@ -6,3 +6,5 @@ store.subscribe(() => {
 });
 
 store.dispatch(actions.bugAdded("bug 1"));
+
+console.log("hello");

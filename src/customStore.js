@@ -24,5 +24,4 @@ function createStore(reducer) {
     getState,
   };
 }
-
 export default createStore(reducer);
